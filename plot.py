@@ -7,7 +7,7 @@ import pandas as pd
 BBox = [20.7693, 20.9526, 39.6013, 39.7278]
 
 # Data Load
-df = pd.read_csv('TripAdvisor.csv')
+df = pd.read_csv('Reviews.csv')
 df = df[['store', 'latitude', 'longitude']]
 # Data Prep
 df = df[(df.latitude < BBox[3]) & (df.latitude > BBox[2]) &
